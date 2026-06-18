@@ -1,0 +1,24 @@
+{
+  "id": "conv-1781776083035-7677cgw9m",
+  "providerId": "claude",
+  "title": "主动识别代码,并转格式",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781776083119,
+  "updatedAt": 1781776124267,
+  "lastResponseAt": 1781776124267,
+  "sessionId": "7ff4f61a-6b7f-4ec2-9a22-893166bd4124",
+  "providerState": {
+    "providerSessionId": "7ff4f61a-6b7f-4ec2-9a22-893166bd4124"
+  },
+  "currentNote": "Git/Git 工作区、暂存区和版本库.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 2022,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 13760,
+    "contextWindow": 200000,
+    "contextTokens": 15782,
+    "percentage": 8,
+    "contextWindowIsAuthoritative": true
+  }
+}
