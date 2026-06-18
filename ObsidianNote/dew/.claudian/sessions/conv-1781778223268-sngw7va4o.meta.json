@@ -1,0 +1,23 @@
+{
+  "id": "conv-1781778223268-sngw7va4o",
+  "providerId": "claude",
+  "title": "为这四篇笔记创建关联,代码块美化,等",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781778223269,
+  "updatedAt": 1781778525220,
+  "lastResponseAt": 1781778525219,
+  "sessionId": "4c8ce453-dfe5-450d-942a-840f80a18cc1",
+  "providerState": {
+    "providerSessionId": "4c8ce453-dfe5-450d-942a-840f80a18cc1"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1544,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 33728,
+    "contextWindow": 200000,
+    "contextTokens": 35272,
+    "percentage": 18,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1781777591597-rwf8ckqli",
+  "providerId": "claude",
+  "title": "关系谱图",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781777591597,
+  "updatedAt": 1781777816535,
+  "lastResponseAt": 1781777808469,
+  "sessionId": "69f698b3-61be-4829-b352-209ca371d79d",
+  "providerState": {
+    "providerSessionId": "69f698b3-61be-4829-b352-209ca371d79d"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}

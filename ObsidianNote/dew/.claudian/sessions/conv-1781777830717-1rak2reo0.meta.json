@@ -1,0 +1,23 @@
+{
+  "id": "conv-1781777830717-1rak2reo0",
+  "providerId": "claude",
+  "title": "关系图谱为什么不更新",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781777830718,
+  "updatedAt": 1781778064497,
+  "lastResponseAt": 1781777994527,
+  "sessionId": "4f88736c-c16c-40da-ac26-31fa866b5731",
+  "providerState": {
+    "providerSessionId": "4f88736c-c16c-40da-ac26-31fa866b5731"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 540,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 24384,
+    "contextWindow": 200000,
+    "contextTokens": 24924,
+    "percentage": 12,
+    "contextWindowIsAuthoritative": true
+  }
+}

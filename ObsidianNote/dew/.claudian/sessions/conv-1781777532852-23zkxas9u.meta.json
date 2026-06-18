@@ -1,0 +1,23 @@
+{
+  "id": "conv-1781777532852-23zkxas9u",
+  "providerId": "claude",
+  "title": "关系谱图",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781777532853,
+  "updatedAt": 1781777582950,
+  "lastResponseAt": 1781777575292,
+  "sessionId": "480f7f91-c7ba-4db0-80fd-dec2ec782390",
+  "providerState": {
+    "providerSessionId": "480f7f91-c7ba-4db0-80fd-dec2ec782390"
+  },
+  "currentNote": "Git/4.Git 基本操作.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

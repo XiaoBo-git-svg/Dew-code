@@ -1,0 +1,23 @@
+{
+  "id": "conv-1781778089922-9lvwjyazv",
+  "providerId": "claude",
+  "title": "识别代码添加语法快",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781778089923,
+  "updatedAt": 1781778178331,
+  "lastResponseAt": 1781778146540,
+  "sessionId": "7450cbc3-3433-4cda-9bb9-47204e20dc49",
+  "providerState": {
+    "providerSessionId": "7450cbc3-3433-4cda-9bb9-47204e20dc49"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 338,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 16512,
+    "contextWindow": 200000,
+    "contextTokens": 16850,
+    "percentage": 8,
+    "contextWindowIsAuthoritative": true
+  }
+}

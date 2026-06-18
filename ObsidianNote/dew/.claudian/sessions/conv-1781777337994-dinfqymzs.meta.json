@@ -1,0 +1,24 @@
+{
+  "id": "conv-1781777337994-dinfqymzs",
+  "providerId": "claude",
+  "title": "`[git add](https://www",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781777337995,
+  "updatedAt": 1781777522833,
+  "lastResponseAt": 1781777392965,
+  "sessionId": "c802182e-2c80-448c-9b19-907aaeeaf15f",
+  "providerState": {
+    "providerSessionId": "c802182e-2c80-448c-9b19-907aaeeaf15f"
+  },
+  "currentNote": "Git/4.Git 基本操作.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 395,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 17600,
+    "contextWindow": 200000,
+    "contextTokens": 17995,
+    "percentage": 9,
+    "contextWindowIsAuthoritative": true
+  }
+}
