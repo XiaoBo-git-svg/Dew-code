@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎯 猜数字游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .rules {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-left: 4px solid #667eea;
+        }
+
+        .rules p {
+            color: #555;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .input-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .input-section label {
+            display: block;
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .input-section input {
+            width: 120px;
+            height: 50px;
+            font-size: 24px;
+            text-align: center;
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .input-section input:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+        }
+
+        .guess-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 15px;
+        }
+
+        .guess-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .guess-btn:active {
+            transform: translateY(0);
+        }
+
+        .guess-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .hint-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .hint-emoji {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hint-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .hint-temp {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .attempts {
+            text-align: center;
+            font-size: 16px;
+            color: #e74c3c;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+
+        .history {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .history-title {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .history-list {
+            max-height: 120px;
+            overflow-y: auto;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .history-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .history-item:last-child {
+            border-bottom: none;
+        }
+
+        .restart-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4);
+        }
+
+        .restart-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .status {
+            text-align: center;
+            font-size: 12px;
+            color: #95a5a6;
+            margin-top: 20px;
+        }
+
+        /* 动画效果 */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .shake {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        .pulse {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        .bounce {
+            animation: bounce 0.5s ease-in-out;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .input-section input {
+                width: 100px;
+                height: 45px;
+                font-size: 20px;
+            }
+
+            .hint-emoji {
+                font-size: 40px;
+            }
+
+            .hint-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">🎯 猜数字游戏 🎯</div>
+
+        <div class="rules">
+            <p>🎮 游戏规则：</p>
+            <p>• 我想了一个 1-100 之间的数字</p>
+            <p>• 你有 7 次机会猜中它</p>
+            <p>• 每次猜测我会提示太大或太小</p>
+            <p>• 还有温度提示哦！</p>
+        </div>
+
+        <div class="input-section">
+            <label>👉 请输入你的猜测 (1-100)</label>
+            <input type="number" id="guessInput" min="1" max="100" placeholder="?">
+            <button class="guess-btn" id="guessBtn" onclick="makeGuess()">🎯 猜测！</button>
+        </div>
+
+        <div class="hint-box" id="hintBox">
+            <div class="hint-emoji" id="hintEmoji">🤔</div>
+            <div class="hint-text" id="hintText">等待你的第一次猜测...</div>
+            <div class="hint-temp" id="hintTemp"></div>
+        </div>
+
+        <div class="attempts" id="attempts">🎯 剩余机会: 7 次</div>
+
+        <div class="history">
+            <div class="history-title">📜 猜测历史：</div>
+            <div class="history-list" id="historyList"></div>
+        </div>
+
+        <button class="restart-btn" id="restartBtn" onclick="restartGame()" disabled>🔄 重新开始</button>
+
+        <div class="status">🎮 游戏进行中...</div>
+    </div>
+
+    <script>
+        // 游戏状态
+        let secretNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 7;
+        let currentAttempt = 0;
+        let guessed = false;
+        let history = [];
+
+        // 获取DOM元素
+        const guessInput = document.getElementById('guessInput');
+        const guessBtn = document.getElementById('guessBtn');
+        const hintBox = document.getElementById('hintBox');
+        const hintEmoji = document.getElementById('hintEmoji');
+        const hintText = document.getElementById('hintText');
+        const hintTemp = document.getElementById('hintTemp');
+        const attemptsDisplay = document.getElementById('attempts');
+        const historyList = document.getElementById('historyList');
+        const restartBtn = document.getElementById('restartBtn');
+
+        // 输入框回车事件
+        guessInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                makeGuess();
+            }
+        });
+
+        // 猜测函数
+        function makeGuess() {
+            if (guessed) return;
+
+            const guess = parseInt(guessInput.value);
+
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+                shakeElement(guessInput);
+                showAlert('⚠️ 警告', '请输入1-100之间的数字！');
+                return;
+            }
+
+            currentAttempt++;
+            const remaining = attempts - currentAttempt;
+
+            // 添加到历史记录
+            addToHistory(guess);
+
+            if (guess === secretNumber) {
+                guessed = true;
+                showWin();
+            } else {
+                // 计算温度
+                const diff = Math.abs(guess - secretNumber);
+                let temperature, color, emoji;
+
+                if (diff <= 5) {
+                    temperature = '非常接近了！';
+                    color = '#e74c3c';
+                    emoji = '🔥';
+                } else if (diff <= 15) {
+                    temperature = '有点接近！';
+                    color = '#f39c12';
+                    emoji = '🌡️';
+                } else if (diff <= 30) {
+                    temperature = '还差一点！';
+                    color = '#3498db';
+                    emoji = '❄️';
+                } else {
+                    temperature = '差得远呢！';
+                    color = '#95a5a6';
+                    emoji = '🥶';
+                }
+
+                // 方向提示
+                const direction = guess < secretNumber ? '📈 太小了！' : '📉 太大了！';
+
+                // 更新显示
+                hintEmoji.textContent = emoji;
+                hintText.textContent = direction;
+                hintText.style.color = color;
+                hintTemp.textContent = temperature;
+                hintTemp.style.color = color;
+                attemptsDisplay.textContent = `🎯 剩余机会: ${remaining} 次`;
+
+                // 添加动画
+                pulseElement(hintBox);
+
+                // 检查是否用完机会
+                if (remaining === 0) {
+                    showLose();
+                }
+            }
+
+            guessInput.value = '';
+            guessInput.focus();
+        }
+
+        // 添加历史记录
+        function addToHistory(guess) {
+            const diff = guess - secretNumber;
+            let symbol;
+
+            if (diff < 0) symbol = '⬆️';
+            else if (diff > 0) symbol = '⬇️';
+            else symbol = '✅';
+
+            history.push({ attempt: currentAttempt, guess, symbol });
+
+            // 更新历史显示
+            const item = document.createElement('div');
+            item.className = 'history-item';
+            item.textContent = `第${currentAttempt}次: ${guess} ${symbol}`;
+            historyList.appendChild(item);
+            historyList.scrollTop = historyList.scrollHeight;
+        }
+
+        // 显示胜利
+        function showWin() {
+            guessBtn.disabled = true;
+            restartBtn.disabled = false;
+
+            let rating;
+            if (currentAttempt === 1) {
+                rating = '🌟 运气爆棚！一次命中！';
+            } else if (currentAttempt <= 3) {
+                rating = '💎 高手在民间！';
+            } else if (currentAttempt <= 5) {
+                rating = '🎯 不错不错！';
+            } else {
+                rating = '👍 坚持就是胜利！';
+            }
+
+            hintEmoji.textContent = '🎉';
+            hintText.textContent = `恭喜过关！答案就是 ${secretNumber}`;
+            hintText.style.color = '#2ecc71';
+            hintTemp.textContent = rating;
+            hintTemp.style.color = '#2ecc71';
+
+            // 胜利动画
+            bounceElement(hintBox);
+
+            // 显示弹窗
+            setTimeout(() => {
+                showAlert('🎉 恭喜过关！', `你猜对了！答案是 ${secretNumber}\n用了 ${currentAttempt} 次\n${rating}`);
+            }, 500);
+        }
+
+        // 显示失败
+        function showLose() {
+            guessBtn.disabled = true;
+            restartBtn.disabled = false;
+
+            hintEmoji.textContent = '😢';
+            hintText.textContent = `游戏结束！答案是 ${secretNumber}`;
+            hintText.style.color = '#e74c3c';
+            hintTemp.textContent = '再接再厉！';
+            hintTemp.style.color = '#e74c3c';
+
+            // 失败动画
+            shakeElement(hintBox);
+
+            // 显示弹窗
+            setTimeout(() => {
+                showAlert('😢 游戏结束', `很遗憾，答案是 ${secretNumber}\n下次再加油！`);
+            }, 500);
+        }
+
+        // 重新开始游戏
+        function restartGame() {
+            secretNumber = Math.floor(Math.random() * 100) + 1;
+            currentAttempt = 0;
+            guessed = false;
+            history = [];
+
+            guessBtn.disabled = false;
+            restartBtn.disabled = true;
+
+            hintEmoji.textContent = '🤔';
+            hintText.textContent = '等待你的第一次猜测...';
+            hintText.style.color = '#2c3e50';
+            hintTemp.textContent = '';
+            attemptsDisplay.textContent = '🎯 剩余机会: 7 次';
+
+            historyList.innerHTML = '';
+            guessInput.value = '';
+            guessInput.focus();
+
+            // 重新开始动画
+            pulseElement(hintBox);
+        }
+
+        // 显示弹窗
+        function showAlert(title, message) {
+            // 创建自定义弹窗
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            `;
+
+            const alertBox = document.createElement('div');
+            alertBox.style.cssText = `
+                background: white;
+                border-radius: 20px;
+                padding: 30px;
+                max-width: 300px;
+                width: 90%;
+                text-align: center;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            `;
+
+            alertBox.innerHTML = `
+                <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">${title}</div>
+                <div style="font-size: 16px; color: #555; margin-bottom: 20px; white-space: pre-line;">${message}</div>
+                <button onclick="this.parentElement.parentElement.remove()" style="
+                    padding: 10px 30px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                ">确定</button>
+            `;
+
+            overlay.appendChild(alertBox);
+            document.body.appendChild(overlay);
+
+            // 点击背景关闭
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) {
+                    overlay.remove();
+                }
+            });
+        }
+
+        // 动画函数
+        function shakeElement(el) {
+            el.classList.add('shake');
+            setTimeout(() => el.classList.remove('shake'), 500);
+        }
+
+        function pulseElement(el) {
+            el.classList.add('pulse');
+            setTimeout(() => el.classList.remove('pulse'), 500);
+        }
+
+        function bounceElement(el) {
+            el.classList.add('bounce');
+            setTimeout(() => el.classList.remove('bounce'), 500);
+        }
+
+        // 页面加载完成后聚焦输入框
+        window.onload = function() {
+            guessInput.focus();
+        };
+    </script>
+</body>
+</html>
