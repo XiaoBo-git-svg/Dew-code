@@ -1,7 +1,7 @@
 import random
 import tkinter as tk
 
-# 颜色配置：背景色, 文字色
+# 数字颜色配置：背景色, 文字色.
 COLORS = {
     0:    ("#cdc1b4", "#cdc1b4"),
     2:    ("#eee4da", "#776e65"),
