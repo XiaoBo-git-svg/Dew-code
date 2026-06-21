@@ -4,8 +4,8 @@
   "title": "firefox里面用obsidian web clipper后clippingsd代码我想自动识别高...",
   "titleGenerationStatus": "failed",
   "createdAt": 1782011562015,
-  "updatedAt": 1782011636416,
-  "lastResponseAt": 1782011636416,
+  "updatedAt": 1782011663959,
+  "lastResponseAt": 1782011663959,
   "sessionId": "57ef7359-f42d-4543-a94d-9f090b3d1701",
   "providerState": {
     "providerSessionId": "57ef7359-f42d-4543-a94d-9f090b3d1701",
@@ -378,14 +378,14 @@
       }
     }
   },
-  "currentNote": "Clippings/03.AI 工具全景  菜鸟教程.md",
   "usage": {
     "model": "haiku",
-    "inputTokens": 6577,
+    "inputTokens": 398,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 11968,
+    "cacheReadInputTokens": 18496,
     "contextWindow": 200000,
-    "contextTokens": 18545,
-    "percentage": 9
+    "contextTokens": 18894,
+    "percentage": 9,
+    "contextWindowIsAuthoritative": true
   }
 }
