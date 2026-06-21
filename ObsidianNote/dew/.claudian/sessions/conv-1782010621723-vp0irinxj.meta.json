@@ -1,0 +1,22 @@
+{
+  "id": "conv-1782010621723-vp0irinxj",
+  "providerId": "claude",
+  "title": "clippings来的代码我想让它自动python高亮",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782010621733,
+  "updatedAt": 1782010844420,
+  "lastResponseAt": 1782010838945,
+  "sessionId": "df600eda-16ae-4c22-9d97-abd584d56636",
+  "providerState": {
+    "providerSessionId": "df600eda-16ae-4c22-9d97-abd584d56636"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 757,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 13760,
+    "contextWindow": 200000,
+    "contextTokens": 14517,
+    "percentage": 7
+  }
+}
