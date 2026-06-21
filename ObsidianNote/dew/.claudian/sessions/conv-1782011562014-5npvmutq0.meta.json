@@ -4,8 +4,8 @@
   "title": "firefox里面用obsidian web clipper后clippingsd代码我想自动识别高...",
   "titleGenerationStatus": "failed",
   "createdAt": 1782011562015,
-  "updatedAt": 1782011663959,
-  "lastResponseAt": 1782011663959,
+  "updatedAt": 1782013373336,
+  "lastResponseAt": 1782013368096,
   "sessionId": "57ef7359-f42d-4543-a94d-9f090b3d1701",
   "providerState": {
     "providerSessionId": "57ef7359-f42d-4543-a94d-9f090b3d1701",
@@ -374,18 +374,18 @@
             "result": "(Bash completed with no output)"
           }
         ],
-        "isExpanded": false
+        "isExpanded": false,
+        "result": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
       }
     }
   },
   "usage": {
     "model": "haiku",
-    "inputTokens": 398,
+    "inputTokens": 297,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 18496,
+    "cacheReadInputTokens": 53184,
     "contextWindow": 200000,
-    "contextTokens": 18894,
-    "percentage": 9,
-    "contextWindowIsAuthoritative": true
+    "contextTokens": 53481,
+    "percentage": 27
   }
 }

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(# Check Obsidian version from config *)",
+      "Read(//home/dew/**)",
+      "Bash(find /home/dew -name \"obsidian.log\" -o -name \"*.log\" -path \"*obsidian*\" 2>/dev/null | head -5)",
+      "Bash(obsidian --version)",
+      "Bash(dpkg -l)",
+      "Bash(flatpak list *)",
+      "Bash(snap list *)",
+      "Bash(curl -sL -x http://127.0.0.1:7891 \"https://api.github.com/repos/silentvoid13/Templater/releases\")",
+      "Bash(python3 -c ' *)",
+      "Bash(for ver in 2.19.3 2.20.0 2.20.1 2.21.0 2.22.0; do\n  min=$\\(curl -sL -x http://127.0.0.1:7891 \"https://github.com/silentvoid13/Templater/releases/download/$ver/manifest.json\" 2>/dev/null | python3 -c \"import sys,json; print\\(json.load\\(sys.stdin\\).get\\('minAppVersion','?'\\)\\)\" 2>/dev/null\\)\n  echo \"$ver → minAppVersion: $min\"\ndone)",
+      "Bash(curl -sL -x http://127.0.0.1:7891 \"https://github.com/silentvoid13/Templater/releases/download/2.20.0/manifest.json\")",
+      "Bash(curl -sL -x http://127.0.0.1:7891 --connect-timeout 10 \"https://github.com/silentvoid13/Templater/releases/download/2.20.0/manifest.json\")",
+      "Bash(curl -sL -x http://127.0.0.1:7891 \"https://api.github.com/repos/silentvoid13/Templater/releases/tags/2.20.0\")",
+      "Read(//tmp/**)",
+      "Bash(curl -sL -x http://127.0.0.1:7891 -o templater-obsidian.zip \"https://github.com/SilentVoid13/Templater/releases/download/2.20.0/templater-obsidian.zip\")",
+      "Bash(curl -sL --connect-timeout 15 -o /tmp/templater.zip \"https://github.com/SilentVoid13/Templater/releases/download/2.20.0/templater-obsidian.zip\")",
+      "Bash(curl -sL --connect-timeout 15 --noproxy '*' -o /tmp/templater2.zip \"https://raw.githubusercontent.com/silentvoid13/Templater/master/manifest.json\")",
+      "Bash(curl -sL --noproxy * https://raw.githubusercontent.com/silentvoid13/Templater/master/manifest.json -o /home/dew/Dew-code/ObsidianNote/dew/.obsidian/plugins/templater-obsidian/manifest.json)",
+      "Bash(curl -sL --noproxy * https://raw.githubusercontent.com/silentvoid13/Templater/master/styles.css -o /home/dew/Dew-code/ObsidianNote/dew/.obsidian/plugins/templater-obsidian/styles.css)",
+      "Bash(curl -sL --noproxy '*' \"https://gitee.com/api/v5/repos/silentvoid13/Templater/releases\")",
+      "Bash(node -e ' *)",
+      "Bash(curl -sLo main.js \"https://github.com/SilentVoid13/Templater/releases/download/2.22.1/main.js\")",
+      "Bash(curl -sLo manifest.json \"https://github.com/SilentVoid13/Templater/releases/download/2.22.1/manifest.json\")"
+    ]
+  }
+}

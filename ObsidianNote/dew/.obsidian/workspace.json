@@ -172,6 +172,18 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "7a56316bfa0af10b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Clippings/03.AI 工具全景  菜鸟教程.md"
+              },
+              "icon": "lucide-info",
+              "title": "03.AI 工具全景  菜鸟教程的笔记属性"
+            }
           }
         ],
         "currentTab": 5
@@ -192,26 +204,28 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "125995fa4a9f1ec8",
+  "active": "925afa0f35a22cb1",
   "lastOpenFiles": [
+    "Clippings/01.AI 简介  菜鸟教程.md",
+    "Templates/runoob-clipper.md",
+    "Templates/fix-runoob-code.md",
     "Templates/add-python-highlight.md",
+    "Clippings/03.AI 工具全景  菜鸟教程.md",
+    "Clippings/02.Prompt 提示词  菜鸟教程.md",
+    "未命名.base",
+    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.2df713260849",
+    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.6093fa59ba62",
+    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.7f4f35de4702",
+    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.6c20a7609579",
+    "Templates/fix-runoob-code.md.tmp.64514.de649acad810",
+    "Templates/fix-runoob-code.md.tmp.64514.5b7e3e5ac4aa",
     "Templates/add-python-highlight.md.tmp.63607.ce40d4661478",
     "Templates",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md",
-    "Clippings/03.AI 工具全景  菜鸟教程.md",
     "Clippings/00.AI 入门教程  菜鸟教程.md",
     "Git/01.Git 安装配置.md",
     "Git/00.Git 教程 - 菜鸟教程.md",
-    "Clippings/01.AI 简介  菜鸟教程.md",
     "Clippings/01.AI 简介  菜鸟教程.md.tmp.50544.083921d8d1e0",
-    "Clippings/01.AI 简介  菜鸟教程.md.tmp.50544.e44797e6f7e5",
     "Git/12.Git 服务器搭建.md",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md.tmp.48849.c7ff9041b881",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md.tmp.48849.b97f069889f1",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md.tmp.48849.0cefa9f2dff8",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md.tmp.48849.af4f0fc9b425",
-    "Clippings/02.Prompt 提示词  菜鸟教程.md.tmp.48849.08be8bdb7364",
-    "Clippings",
     "Git/09.Git Flow.md",
     "Git/10.Git 进阶操作.md",
     "www.runoob.com/wp-content/uploads/2015/03/1BCB4379-1A25-4C77-BB82-92B3E7185435.jpg.md",
@@ -227,9 +241,6 @@
     "Git/9.Git Flow.md",
     "Git/10.Git 服务器搭建.md",
     "Git/8.Git 远程仓库(Github).md",
-    "Git/Git 安装配置.md",
-    "Git/7.Git 标签.md",
-    "Git/6.Git 查看提交历史.md",
     "未命名.canvas",
     "Git/Pasted image 20260618165648.png"
   ]

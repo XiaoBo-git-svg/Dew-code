@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782013388565-6se3su94t",
+  "providerId": "claude",
+  "title": "templates插件加载失败",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782013388566,
+  "updatedAt": 1782013484038,
+  "lastResponseAt": 1782013484036,
+  "sessionId": "93f1d9a2-500d-484f-9222-9ba7bc3027c7",
+  "providerState": {
+    "providerSessionId": "93f1d9a2-500d-484f-9222-9ba7bc3027c7"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 213,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 13824,
+    "contextWindow": 200000,
+    "contextTokens": 14037,
+    "percentage": 7,
+    "contextWindowIsAuthoritative": true
+  }
+}
