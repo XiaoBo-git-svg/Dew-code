@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782040011563-8ztc8iykl",
+  "providerId": "claude",
+  "title": "我想让代码去掉\\有什么建议",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782040011563,
+  "updatedAt": 1782040496953,
+  "lastResponseAt": 1782040496953,
+  "sessionId": "3982d8e3-d9f2-4db3-8f3a-75e2291a9722",
+  "providerState": {
+    "providerSessionId": "3982d8e3-d9f2-4db3-8f3a-75e2291a9722"
+  },
+  "currentNote": "Clippings/AI 行业生态  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 276,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 23104,
+    "contextWindow": 200000,
+    "contextTokens": 23380,
+    "percentage": 12,
+    "contextWindowIsAuthoritative": true
+  }
+}

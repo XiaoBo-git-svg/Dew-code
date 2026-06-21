@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782029462286-gatw248mp",
+  "providerId": "claude",
+  "title": "templater插件干什么的",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782029462288,
+  "updatedAt": 1782029830191,
+  "lastResponseAt": 1782029704858,
+  "sessionId": "60374933-be17-4003-a3ab-36a6bbd5d593",
+  "providerState": {
+    "providerSessionId": "60374933-be17-4003-a3ab-36a6bbd5d593"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 232,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 18624,
+    "contextWindow": 200000,
+    "contextTokens": 18856,
+    "percentage": 9,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782029869697-mzae08gem",
+  "providerId": "claude",
+  "title": "alt+e进入什么界面",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782029869697,
+  "updatedAt": 1782029978579,
+  "lastResponseAt": 1782029899577,
+  "sessionId": "0aa291eb-99eb-43cc-bfc1-9c5636104a2f",
+  "providerState": {
+    "providerSessionId": "0aa291eb-99eb-43cc-bfc1-9c5636104a2f"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 49,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 16832,
+    "contextWindow": 200000,
+    "contextTokens": 16881,
+    "percentage": 8,
+    "contextWindowIsAuthoritative": true
+  }
+}

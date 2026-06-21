@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "170e1ba1e80f9e87",
+        "id": "f49b8351bd975279",
         "type": "tabs",
         "children": [
           {
-            "id": "125995fa4a9f1ec8",
+            "id": "2679047280c9f254",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/03.AI 工具全景  菜鸟教程.md",
+                "file": "Clippings/AI 行业生态  菜鸟教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03.AI 工具全景  菜鸟教程"
+              "title": "AI 行业生态  菜鸟教程"
             }
           }
         ]
@@ -155,22 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Clippings/AI 行业生态  菜鸟教程.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "925afa0f35a22cb1",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {},
-              "icon": "bot",
-              "title": "Claudian"
+              "title": "AI 行业生态  菜鸟教程 的大纲"
             }
           },
           {
@@ -179,14 +170,24 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Clippings/03.AI 工具全景  菜鸟教程.md"
+                "file": "Clippings/AI 行业生态  菜鸟教程.md"
               },
               "icon": "lucide-info",
-              "title": "03.AI 工具全景  菜鸟教程的笔记属性"
+              "title": "AI 行业生态  菜鸟教程的笔记属性"
+            }
+          },
+          {
+            "id": "2706e7951be6ed43",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -204,43 +205,44 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "925afa0f35a22cb1",
+  "active": "2679047280c9f254",
   "lastOpenFiles": [
-    "Clippings/01.AI 简介  菜鸟教程.md",
-    "Templates/runoob-clipper.md",
-    "Templates/fix-runoob-code.md",
-    "Templates/add-python-highlight.md",
+    "Clippings/06.AI 应用场景  菜鸟教程.md",
+    "Clippings/AI 行业生态  菜鸟教程.md",
+    "Clippings/AI 行业生态  菜鸟教程 1.md",
+    "Templates/测试模板.md",
+    "Templates/测试模板.md.tmp.33699.f0dded39e6be",
+    "Templates/修复剪藏转义.md.tmp.33699.c082ad72fe51",
+    "Templates/修复剪藏转义.md",
+    "Templates/修复剪藏转义.md.tmp.32622.93fddc4a0c74",
+    "Clippings/AI 应用场景  菜鸟教程.md.tmp.32622.f7c3b8698a20",
+    "Clippings/05.AI 伦理与安全  菜鸟教程.md",
+    "Templates/修复剪藏转义.md.tmp.29849.fea21f3cf814",
+    "Templates/代码块.md",
+    "Clippings/AI 伦理与安全  菜鸟教程 1.md",
+    "Untitled.md",
+    "Clippings/04.AI 工作原理  菜鸟教程.md",
     "Clippings/03.AI 工具全景  菜鸟教程.md",
+    "Clippings/AI 工作原理  菜鸟教程.md.tmp.29849.df97b1ed9d2f",
+    "Clippings/AI 工作原理  菜鸟教程.md.tmp.29849.2c393ac496ec",
+    "Clippings/AI 工作原理  菜鸟教程.md.tmp.29849.a5ac271d8cd5",
     "Clippings/02.Prompt 提示词  菜鸟教程.md",
-    "未命名.base",
-    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.2df713260849",
-    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.6093fa59ba62",
-    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.7f4f35de4702",
-    "Clippings/03.AI 工具全景  菜鸟教程.md.tmp.64514.6c20a7609579",
-    "Templates/fix-runoob-code.md.tmp.64514.de649acad810",
-    "Templates/fix-runoob-code.md.tmp.64514.5b7e3e5ac4aa",
-    "Templates/add-python-highlight.md.tmp.63607.ce40d4661478",
-    "Templates",
+    "Clippings/AI 工作原理  菜鸟教程-转换后-final.md",
+    "Clippings/AI 工作原理  菜鸟教程-转换后-V2.md",
+    "Clippings/AI 工作原理  菜鸟教程-转换后-V3.md",
+    "test-code-block-final.js",
+    "test-code-block-final.js.tmp.20248.f32c2a61fcd8",
+    "Clippings/AI 工作原理  菜鸟教程-转换后.md",
+    "Clippings/AI 工作原理  菜鸟教程-测试.md",
+    "Templates/代码块修复工具集.md",
+    "Templates/add-python-highlight.md",
+    "Templates/fix-runoob-code.md",
+    "Templates/runoob-clipper.md",
+    "Templates/runoob-ai-note.md",
     "Clippings/00.AI 入门教程  菜鸟教程.md",
+    "Clippings/01.AI 简介  菜鸟教程.md",
     "Git/01.Git 安装配置.md",
     "Git/00.Git 教程 - 菜鸟教程.md",
-    "Clippings/01.AI 简介  菜鸟教程.md.tmp.50544.083921d8d1e0",
-    "Git/12.Git 服务器搭建.md",
-    "Git/09.Git Flow.md",
-    "Git/10.Git 进阶操作.md",
-    "www.runoob.com/wp-content/uploads/2015/03/1BCB4379-1A25-4C77-BB82-92B3E7185435.jpg.md",
-    "www.runoob.com/wp-content/uploads/2015/02/20140127131250906.md",
-    "Git/07.Git 查看提交历史.md",
-    "Git/08.Git 标签.md",
-    "Git/03.Git 工作区、暂存区和版本库.md",
-    "Git/02.Git 工作流程.md",
-    "Git/11.Git 远程仓库(Github).md",
-    "Git/06.Git 分支管理.md",
-    "Git/05.Git 基本操作.md",
-    "Git/04.Git 创建仓库.md",
-    "Git/9.Git Flow.md",
-    "Git/10.Git 服务器搭建.md",
-    "Git/8.Git 远程仓库(Github).md",
     "未命名.canvas",
     "Git/Pasted image 20260618165648.png"
   ]

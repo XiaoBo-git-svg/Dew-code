@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782036685847-bfsqiyv8z",
+  "providerId": "claude",
+  "title": "我创建了一个Templater 脚本：更改obsidian web clpper浏览器插件剪藏完笔记...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782036685848,
+  "updatedAt": 1782037585043,
+  "lastResponseAt": 1782037226254,
+  "sessionId": "5fafc3ef-053b-4876-a762-ad393790f985",
+  "providerState": {
+    "providerSessionId": "5fafc3ef-053b-4876-a762-ad393790f985"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 413,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 59648,
+    "contextWindow": 200000,
+    "contextTokens": 60061,
+    "percentage": 30,
+    "contextWindowIsAuthoritative": true
+  }
+}

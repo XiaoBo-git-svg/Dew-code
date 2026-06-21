@@ -23,7 +23,20 @@
       "Bash(curl -sL --noproxy '*' \"https://gitee.com/api/v5/repos/silentvoid13/Templater/releases\")",
       "Bash(node -e ' *)",
       "Bash(curl -sLo main.js \"https://github.com/SilentVoid13/Templater/releases/download/2.22.1/main.js\")",
-      "Bash(curl -sLo manifest.json \"https://github.com/SilentVoid13/Templater/releases/download/2.22.1/manifest.json\")"
+      "Bash(curl -sLo manifest.json \"https://github.com/SilentVoid13/Templater/releases/download/2.22.1/manifest.json\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"\nimport re\n\nfilepath = 'Clippings/AI 伦理与安全  菜鸟教程.md'\nwith open\\(filepath, 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\n\nlines = content.split\\('\\\\n'\\)\nresult = []\nin_code_block = False\nfix_lines = []\n\n# Same regex as the template\ncode_escape_re = re.compile\\(r'\\\\\\\\\\([_*#\\\\[\\\\]]\\)'\\)\nordered_list_re = re.compile\\(r'\\(\\\\d+\\)\\\\\\\\\\\\.'\\)\n\nfor i, line in enumerate\\(lines\\):\n    if line.strip\\(\\).startswith\\('\\\\`\\\\`\\\\`'\\) or line.strip\\(\\).startswith\\('~~~'\\):\n        in_code_block = not in_code_block\n        result.append\\(line\\)\n        continue\n\n    if in_code_block:\n        before = line\n        cleaned = code_escape_re.sub\\(r'\\\\1', line\\)\n        cleaned = ordered_list_re.sub\\(r'\\\\1.', cleaned\\)\n        if cleaned != before:\n            fix_lines.append\\(\\(i+1, before[:60], cleaned[:60]\\)\\)\n        result.append\\(cleaned\\)\n    else:\n        result.append\\(line\\)\n\ncleaned_content = '\\\\n'.join\\(result\\)\nif cleaned_content != content:\n    with open\\(filepath, 'w', encoding='utf-8'\\) as f:\n        f.write\\(cleaned_content\\)\n    print\\(f'✅ 修复完成，共修正 {len\\(fix_lines\\)} 行'\\)\n    print\\(\\)\n    print\\('修复详情（前20行）：'\\)\n    for lineno, before, after in fix_lines[:20]:\n        print\\(f'  L{lineno}: {before}'\\)\n        print\\(f'     -> {after}'\\)\n    if len\\(fix_lines\\) > 20:\n        print\\(f'  ... 还有 {len\\(fix_lines\\)-20} 行'\\)\nelse:\n    print\\('✅ 未发现需要修复的转义'\\)\n\")",
+      "Bash(python3)",
+      "Bash(git checkout *)",
+      "Bash(sed -n '243,260p' \"Clippings/AI 应用场景  菜鸟教程.md\" | cat -A)",
+      "Bash(xxd)",
+      "Bash(grep -n '^```' \"Clippings/AI 应用场景  菜鸟教程.md\")",
+      "Bash(sed -n '245p' \"Clippings/AI 应用场景  菜鸟教程.md\" | xxd | head -5)",
+      "Bash(sed -n '243,350p' \"Clippings/AI 应用场景  菜鸟教程.md\")",
+      "Bash(cat \"Clippings/AI 应用场景  菜鸟教程.md\" | python3 -c \"\nimport sys, re\n\ncontent = sys.stdin.read\\(\\)\nlines = content.split\\('\\\\n'\\)\nresult = []\nin_code_block = False\nfix_count = 0\n\n# Match escaped chars common in clipped articles inside code blocks\ncode_escape_re = re.compile\\(r'\\\\\\\\\\\\\\\\\\([_*#\\\\[\\\\]\\\\-]\\)'\\)\nordered_list_re = re.compile\\(r'\\(\\\\d+\\)\\\\\\\\\\\\\\\\\\\\.'\\)\n\nfor line in lines:\n    stripped = line.lstrip\\(\\)\n    if stripped.startswith\\('\\\\`\\\\`\\\\`'\\) or stripped.startswith\\('~~~'\\):\n        in_code_block = not in_code_block\n        result.append\\(line\\)\n        continue\n\n    if in_code_block:\n        before = line\n        cleaned = code_escape_re.sub\\(r'\\\\1', line\\)\n        cleaned = ordered_list_re.sub\\(r'\\\\1.', cleaned\\)\n        if cleaned != before:\n            fix_count += 1\n        result.append\\(cleaned\\)\n    else:\n        result.append\\(line\\)\n\ncleaned_content = '\\\\n'.join\\(result\\)\nchanged = cleaned_content != content\nprint\\(f'changed={changed}, fix_count={fix_count}'\\)\n# Write to temp file for verification\nwith open\\('/tmp/test_cleaned.md', 'w'\\) as f:\n    f.write\\(cleaned_content\\)\n\")",
+      "Bash(sed -n '250,260p' \"Clippings/AI 应用场景  菜鸟教程.md\")",
+      "Bash(xxd \"Templates/修复剪藏转义.md\")",
+      "Bash(cp \".obsidian/plugins/templater-obsidian/data.json\" \"/tmp/templater-settings-backup.json\" && echo \"✅ 设置已备份到 /tmp/templater-settings-backup.json\")"
     ]
   }
 }
