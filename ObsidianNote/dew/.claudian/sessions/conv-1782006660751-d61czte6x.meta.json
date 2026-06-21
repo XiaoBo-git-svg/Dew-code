@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782006660751-d61czte6x",
+  "providerId": "claude",
+  "title": "整理笔记按02",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782006660752,
+  "updatedAt": 1782007107393,
+  "lastResponseAt": 1782007101884,
+  "sessionId": "a4665cbf-801c-4366-b5c9-3a1b59fd3e93",
+  "providerState": {
+    "providerSessionId": "a4665cbf-801c-4366-b5c9-3a1b59fd3e93"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 334,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 69888,
+    "contextWindow": 200000,
+    "contextTokens": 70222,
+    "percentage": 35,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782008304420-w1i0j4vxw",
+  "providerId": "claude",
+  "title": "实例中代码有高亮,修改",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782008304421,
+  "updatedAt": 1782008389091,
+  "lastResponseAt": 1782008380783,
+  "sessionId": "16bd257a-3b94-4fa0-a0c1-0dbd9cb759b3",
+  "providerState": {
+    "providerSessionId": "16bd257a-3b94-4fa0-a0c1-0dbd9cb759b3"
+  },
+  "currentNote": "Clippings/01.AI 简介  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -3,7 +3,7 @@
   "permissionMode": "yolo",
   "model": "haiku",
   "thinkingBudget": "off",
-  "effortLevel": "high",
+  "effortLevel": "medium",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
@@ -81,7 +81,7 @@
     "claude": "haiku"
   },
   "savedProviderEffort": {
-    "claude": "high"
+    "claude": "medium"
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {},

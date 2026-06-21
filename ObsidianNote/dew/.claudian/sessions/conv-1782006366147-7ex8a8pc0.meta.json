@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782006366147-7ex8a8pc0",
+  "providerId": "claude",
+  "title": "我现在打开的firefox的https://www",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782006366148,
+  "updatedAt": 1782006625247,
+  "lastResponseAt": 1782006617470,
+  "sessionId": "2ee2e961-3dae-45dd-a578-1b79b7c80211",
+  "providerState": {
+    "providerSessionId": "2ee2e961-3dae-45dd-a578-1b79b7c80211"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 682,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 24896,
+    "contextWindow": 200000,
+    "contextTokens": 25578,
+    "percentage": 13,
+    "contextWindowIsAuthoritative": true
+  }
+}
