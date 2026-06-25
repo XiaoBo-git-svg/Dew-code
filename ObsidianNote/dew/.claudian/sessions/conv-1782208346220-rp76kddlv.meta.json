@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782208346220-rp76kddlv",
+  "providerId": "claude",
+  "title": "我想先根据这篇文章建立我的 Prompt 库,把这篇文章内容提取放在一个Prompt文件夹里面",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782208346221,
+  "updatedAt": 1782259664434,
+  "lastResponseAt": 1782208775854,
+  "sessionId": "8990162e-5201-4e75-b5cb-a40c45c19680",
+  "providerState": {
+    "providerSessionId": "8990162e-5201-4e75-b5cb-a40c45c19680"
+  },
+  "currentNote": "Clippings/02.Prompt 提示词  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 944,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39040,
+    "contextWindow": 200000,
+    "contextTokens": 39984,
+    "percentage": 20,
+    "contextWindowIsAuthoritative": true
+  }
+}

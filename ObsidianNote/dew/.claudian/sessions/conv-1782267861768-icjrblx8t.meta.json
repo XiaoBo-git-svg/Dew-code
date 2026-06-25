@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782267861768-icjrblx8t",
+  "providerId": "claude",
+  "title": "dew@dew-tobefilledbyoem:~/Dew-code/ObsidianNote/de...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782267861769,
+  "updatedAt": 1782268067877,
+  "lastResponseAt": 1782268065610,
+  "sessionId": "035804f8-3643-43dc-b861-f3a697cd5509",
+  "providerState": {
+    "providerSessionId": "035804f8-3643-43dc-b861-f3a697cd5509"
+  },
+  "currentNote": "scripts/README.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 4044,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 14464,
+    "contextWindow": 200000,
+    "contextTokens": 18508,
+    "percentage": 9
+  }
+}

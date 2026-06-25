@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782268360126-0ghvionuh",
+  "providerId": "claude",
+  "title": "用obsidian web clipper剪切下来的文件09",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782268360127,
+  "updatedAt": 1782268967369,
+  "lastResponseAt": 1782268913042,
+  "sessionId": "fcda807a-70ee-4510-a99e-f1060975b667",
+  "providerState": {
+    "providerSessionId": "fcda807a-70ee-4510-a99e-f1060975b667"
+  },
+  "currentNote": "Clippings/09.AI API 开发  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1055,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 55936,
+    "contextWindow": 200000,
+    "contextTokens": 56991,
+    "percentage": 28,
+    "contextWindowIsAuthoritative": true
+  }
+}

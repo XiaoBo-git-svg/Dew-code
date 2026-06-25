@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782207623909-1ufebu74q",
+  "providerId": "claude",
+  "title": "我想先根据这篇文章建立我的 Prompt 库,把这篇文章内容提取放在一个Prompt文件夹里面",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782207623911,
+  "updatedAt": 1782208321843,
+  "lastResponseAt": 1782208014684,
+  "sessionId": "4e77f17d-83ea-4b2f-8ad7-207efb008bdd",
+  "providerState": {
+    "providerSessionId": "4e77f17d-83ea-4b2f-8ad7-207efb008bdd"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 701,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 37312,
+    "contextWindow": 200000,
+    "contextTokens": 38013,
+    "percentage": 19,
+    "contextWindowIsAuthoritative": true
+  }
+}

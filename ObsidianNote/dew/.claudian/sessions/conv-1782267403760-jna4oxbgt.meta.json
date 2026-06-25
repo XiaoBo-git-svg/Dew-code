@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782267403760-jna4oxbgt",
+  "providerId": "claude",
+  "title": "将08",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782267403761,
+  "updatedAt": 1782267655012,
+  "lastResponseAt": 1782267573394,
+  "sessionId": "f51b9587-440c-4d34-a651-7b6bcb4b95af",
+  "providerState": {
+    "providerSessionId": "f51b9587-440c-4d34-a651-7b6bcb4b95af"
+  },
+  "currentNote": "Prompt/README.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 230,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 44416,
+    "contextWindow": 200000,
+    "contextTokens": 44646,
+    "percentage": 22,
+    "contextWindowIsAuthoritative": true
+  }
+}

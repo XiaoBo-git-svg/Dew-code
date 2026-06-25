@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782264423200-z3v5oz2l6",
+  "providerId": "claude",
+  "title": "识别代码块并修改为```python```删除其间含有的\\",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782264423201,
+  "updatedAt": 1782264612400,
+  "lastResponseAt": 1782264600384,
+  "sessionId": "1c715b37-3693-44e5-aef9-07c0f57f3cc2",
+  "providerState": {
+    "providerSessionId": "1c715b37-3693-44e5-aef9-07c0f57f3cc2"
+  },
+  "currentNote": "Clippings/08.Prompt 工程进阶  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 130,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 12032,
+    "contextWindow": 200000,
+    "contextTokens": 12162,
+    "percentage": 6
+  }
+}

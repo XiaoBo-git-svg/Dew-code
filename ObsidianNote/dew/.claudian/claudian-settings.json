@@ -1,9 +1,9 @@
 {
   "userName": "",
-  "permissionMode": "plan",
+  "permissionMode": "normal",
   "model": "haiku",
   "thinkingBudget": "off",
-  "effortLevel": "medium",
+  "effortLevel": "max",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
@@ -21,10 +21,10 @@
     "focusInputKey": "i"
   },
   "requireCommandOrControlEnterToSend": false,
-  "locale": "en",
+  "locale": "zh-CN",
   "providerConfigs": {
     "claude": {
-      "safeMode": "acceptEdits",
+      "safeMode": "auto",
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
@@ -81,12 +81,12 @@
     "claude": "haiku"
   },
   "savedProviderEffort": {
-    "claude": "medium"
+    "claude": "max"
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
-    "claude": "plan"
+    "claude": "normal"
   },
   "lastCustomModel": "",
   "maxTabs": 3,

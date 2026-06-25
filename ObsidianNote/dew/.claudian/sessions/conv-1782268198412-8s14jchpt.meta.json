@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782268198412-8s14jchpt",
+  "providerId": "claude",
+  "title": "代码文件为什么是这个{",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782268198413,
+  "updatedAt": 1782268240789,
+  "lastResponseAt": 1782268231167,
+  "sessionId": "eb4617c3-9c62-41c3-8caa-e8d0b485738b",
+  "providerState": {
+    "providerSessionId": "eb4617c3-9c62-41c3-8caa-e8d0b485738b"
+  },
+  "currentNote": "Clippings/09.AI API 开发  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 16283,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 12160,
+    "contextWindow": 200000,
+    "contextTokens": 28443,
+    "percentage": 14,
+    "contextWindowIsAuthoritative": true
+  }
+}
