@@ -1,0 +1,59 @@
+{
+  "id": "conv-1782526553850-ln30wlkv2",
+  "providerId": "claude",
+  "title": "根据根据ObsidianWebClipper代码块修复指南直接执行",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782526553851,
+  "updatedAt": 1782528486682,
+  "lastResponseAt": 1782528322012,
+  "sessionId": "8ed446f1-95d3-4fd6-bb59-aaa0edf40d8e",
+  "providerState": {
+    "providerSessionId": "8ed446f1-95d3-4fd6-bb59-aaa0edf40d8e",
+    "subagentData": {
+      "call_2a957584b3ea4ad790feec72": {
+        "id": "call_2a957584b3ea4ad790feec72",
+        "description": "Find WebClipper fix guide",
+        "prompt": "Search the vault at /home/dew/Dew-code/ObsidianNote/dew for a note about \"ObsidianWebClipper代码块修复指南\" or similar. Look for files with names containing \"WebClipper\", \"代码块\", \"修复\", \"clipper\" etc. Use Glob and Grep to find it. Return the full file path.",
+        "status": "completed",
+        "toolCalls": [
+          {
+            "id": "call_89b777d5af1a4aec9737683b",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew -type f \\( -iname \"*WebClipper*\" -o -iname \"*clipper*\" -o -iname \"*代码块*\" -o -iname \"*修复*\" \\) 2>/dev/null",
+              "description": "Find files with names containing WebClipper, clipper, 代码块, or 修复"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/ObsidianWebClipper代码块修复指南.md"
+          },
+          {
+            "id": "call_ee68ef799681498ca9de5001",
+            "name": "Grep",
+            "input": {
+              "pattern": "WebClipper|代码块修复|clipper.*修复",
+              "path": "/home/dew/Dew-code/ObsidianNote/dew",
+              "output_mode": "files_with_matches",
+              "-i": "True"
+            },
+            "status": "error",
+            "isExpanded": false,
+            "result": "<tool_use_error>Error: No such tool available: Grep</tool_use_error>"
+          }
+        ],
+        "isExpanded": false,
+        "result": "The file was found immediately via filename search. The full file path is:\n\n**/home/dew/Dew-code/ObsidianNote/dew/ObsidianWebClipper代码块修复指南.md**"
+      }
+    }
+  },
+  "currentNote": "Clippings/23.计算机视觉 AI  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 219,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 169344,
+    "contextWindow": 200000,
+    "contextTokens": 169563,
+    "percentage": 85
+  }
+}

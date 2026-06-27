@@ -1,14 +1,14 @@
 ---
-title: "Bug 调试"
-category: "代码辅助开发"
-difficulty: "入门"
+title: Bug 调试
+category: 代码辅助开发
+difficulty: 入门
 tags:
   - prompt
   - 代码
   - 调试
   - Bug
 created: 2026-06-23
-source: "[[Clippings/06.AI 应用场景  菜鸟教程]]"
+source: "[[06.AI 应用场景  菜鸟教程]]"
 ---
 
 # Bug 调试

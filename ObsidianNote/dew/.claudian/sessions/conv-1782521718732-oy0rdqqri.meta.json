@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782521718732-oy0rdqqri",
+  "providerId": "claude",
+  "title": "根据ObsidianWebClipper代码块修复指南执行，不要擅自思考",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782521718733,
+  "updatedAt": 1782522147030,
+  "lastResponseAt": 1782522021274,
+  "sessionId": "8fd725c5-9731-43b0-91e2-6250bc22791c",
+  "providerState": {
+    "providerSessionId": "8fd725c5-9731-43b0-91e2-6250bc22791c"
+  },
+  "currentNote": "Clippings/19.RLHF 对齐训练  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 142,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 43840,
+    "contextWindow": 200000,
+    "contextTokens": 43982,
+    "percentage": 22,
+    "contextWindowIsAuthoritative": true
+  }
+}

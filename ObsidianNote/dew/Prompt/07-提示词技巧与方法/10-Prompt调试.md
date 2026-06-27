@@ -1,14 +1,14 @@
 ---
-title: "Prompt 调试"
-category: "提示词技巧与方法"
-difficulty: "进阶"
+title: Prompt 调试
+category: 提示词技巧与方法
+difficulty: 进阶
 tags:
   - prompt
   - 调试
   - 测试
   - 迭代优化
 created: 2026-06-24
-source: "[[Clippings/08.Prompt 工程进阶  菜鸟教程]]"
+source: "[[08.Prompt 工程进阶  菜鸟教程]]"
 ---
 
 # Prompt 调试

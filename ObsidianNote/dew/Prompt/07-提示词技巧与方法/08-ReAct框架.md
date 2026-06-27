@@ -1,14 +1,14 @@
 ---
-title: "ReAct 框架"
-category: "提示词技巧与方法"
-difficulty: "进阶"
+title: ReAct 框架
+category: 提示词技巧与方法
+difficulty: 进阶
 tags:
   - prompt
   - ReAct
   - 推理行动
   - Agent
 created: 2026-06-24
-source: "[[Clippings/08.Prompt 工程进阶  菜鸟教程]]"
+source: "[[08.Prompt 工程进阶  菜鸟教程]]"
 ---
 
 # ReAct 框架

@@ -1,13 +1,14 @@
 ---
-title: "Prompt 模板库"
-description: "个人 Prompt 工具箱，用得越多，越顺手"
+title: Prompt 模板库
+description: 个人 Prompt 工具箱，用得越多，越顺手
 tags:
   - prompt
   - MOC
 created: 2026-06-23
 source:
-  - "[[Clippings/06.AI 应用场景  菜鸟教程]]"
-  - "[[Clippings/02.Prompt 提示词  菜鸟教程]]"
+  - "[[06.AI 应用场景  菜鸟教程]]"
+  - "[[02.Prompt 提示词  菜鸟教程]]"
+  - "[[10.RAG 检索增强生成  菜鸟教程]]"
 ---
 
 # Prompt 模板库
@@ -64,6 +65,7 @@ source:
 最容易落地的企业应用场景之一。
 
 - [[Prompt/06-客服与问答/01-客服机器人|客服机器人]]
+- [[Prompt/06-客服与问答/02-RAG知识库问答|RAG 知识库问答]]
 
 ### [[Prompt/07-提示词技巧与方法/01-提示词基础结构|提示词技巧与方法]]
 不只是模板，更是方法论。学会这些技巧，任何场景都能写出好 Prompt。
@@ -100,5 +102,5 @@ source:
 ---
 
 ## 来源
-- [[Clippings/06.AI 应用场景  菜鸟教程]]
-- [[Clippings/02.Prompt 提示词  菜鸟教程]]
+- [[06.AI 应用场景  菜鸟教程]]
+- [[02.Prompt 提示词  菜鸟教程]]

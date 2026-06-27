@@ -1,0 +1,14 @@
+{
+  "id": "conv-1782528475771-flvtvt7iw",
+  "providerId": "claude",
+  "title": "根据README更新Prompt 库",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782528475772,
+  "updatedAt": 1782528485441,
+  "lastResponseAt": 1782528484584,
+  "sessionId": "f6cd9748-51bf-4a76-aec5-1b45b8667dfe",
+  "providerState": {
+    "providerSessionId": "f6cd9748-51bf-4a76-aec5-1b45b8667dfe"
+  },
+  "currentNote": "Prompt/README.md"
+}

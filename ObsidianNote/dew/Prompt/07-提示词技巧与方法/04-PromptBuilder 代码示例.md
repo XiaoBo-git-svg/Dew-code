@@ -1,14 +1,14 @@
 ---
-title: "PromptBuilder 代码示例"
-category: "提示词技巧与方法"
-difficulty: "进阶"
+title: PromptBuilder 代码示例
+category: 提示词技巧与方法
+difficulty: 进阶
 tags:
   - prompt
   - 代码
   - Python
   - API
 created: 2026-06-23
-source: "[[Clippings/02.Prompt 提示词  菜鸟教程]]"
+source: "[[02.Prompt 提示词  菜鸟教程]]"
 ---
 
 # PromptBuilder 代码示例

@@ -13,15 +13,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/10.RAG 检索增强生成  菜鸟教程.md",
+                "file": "Prompt/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10.RAG 检索增强生成  菜鸟教程"
+              "title": "README"
+            }
+          },
+          {
+            "id": "8b5fce08dc54f590",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prompt/06-客服与问答/01-客服机器人.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-客服机器人"
+            }
+          },
+          {
+            "id": "e882c7225b019cf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prompt/Prompt-MOC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Prompt-MOC"
+            }
+          },
+          {
+            "id": "d5a88fc6c3504d2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM 核心文章/Stephen Wolfram｜ChatGPT 在做什么，以及它为何发挥作用 - 智源社区.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stephen Wolfram｜ChatGPT 在做什么，以及它为何发挥作用 - 智源社区"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -191,7 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,44 +249,83 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "7418dffc2a4e442c",
+  "floating": {
+    "id": "87bf261b932c846f",
+    "type": "floating",
+    "children": [
+      {
+        "id": "1567f3b86d79a544",
+        "type": "window",
+        "children": [
+          {
+            "id": "3dd865216ccbcc37",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "30895e52a7d96556",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://obsidian.md/auth?returnto=%2Faccount%2F",
+                    "title": "Account - Obsidian",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "Account - Obsidian"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -93,
+        "y": 108,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "d5a88fc6c3504d2a",
   "lastOpenFiles": [
-    "Clippings/09.AI API 开发  菜鸟教程.md",
-    "wp-content/uploads/2015/03/106AD534-A38A-47F3-88A3-B7BE3F2FEEF1.jpg.md",
-    "wp-content/uploads/2015/03",
-    "wp-content/uploads/2015",
-    "wp-content/uploads",
-    "wp-content",
-    "Clippings/10.RAG 检索增强生成  菜鸟教程.md",
-    "ObsidianWebClipper.md",
-    "fix_clipper.py",
-    "fix_clipper.py.tmp.19211.82122f336737",
-    "ObsidianWebClipper.md.tmp.19211.9f67158d8922",
-    "Clippings/10.RAG 检索增强生成  菜鸟教程.md.tmp.19211.60e593fa09f1",
-    "Clippings/10.RAG 检索增强生成  菜鸟教程.md.tmp.19211.d73c65a76fe2",
-    "ObsidianWebClipper.md.tmp.18078.ca5f6d656538",
-    "Clippings/08.Prompt 工程进阶  菜鸟教程.md",
-    "scripts/README.md",
-    "Prompt/README.md",
+    "LLM 核心文章/Stephen Wolfram｜ChatGPT 在做什么，以及它为何发挥作用 - 智源社区.md",
+    "AI基础/10.RAG 检索增强生成  菜鸟教程.md",
+    "LLM 核心文章",
+    "AI基础/12.AI 多模态  菜鸟教程.md",
+    "Prompt/06-客服与问答/02-RAG知识库问答.md",
+    "Prompt/06-客服与问答/01-客服机器人.md",
     "Prompt/Prompt-MOC.md",
-    "Prompt/07-提示词技巧与方法/04-PromptBuilder 代码示例.md",
-    "Prompt/07-提示词技巧与方法/06-少样本提示.md",
-    "Prompt/07-提示词技巧与方法/10-Prompt调试.md",
-    "Prompt/07-提示词技巧与方法/11-提示词安全.md",
-    "Prompt/05-创意与设计/03-故事创作.md",
-    "Prompt/05-创意与设计/02-设计描述.md",
-    "Prompt/05-创意与设计/01-头脑风暴.md",
-    "Prompt/07-提示词技巧与方法/05-思维链提示.md",
-    "Prompt/07-提示词技巧与方法/09-结构化输出.md",
-    "Prompt/07-提示词技巧与方法/03-精准输出技巧.md",
-    "Prompt/07-提示词技巧与方法/02-角色扮演提示.md",
-    "Prompt/07-提示词技巧与方法/01-提示词基础结构.md",
-    "Prompt/07-提示词技巧与方法/08-ReAct框架.md",
-    "Prompt/07-提示词技巧与方法/07-系统提示词设计.md",
-    "Prompt/03-数据分析与总结/03-会议纪要.md",
-    "Prompt/02-代码辅助开发/04-问题排查.md",
-    "Prompt/02-代码辅助开发/01-代码生成与解释.md",
-    "Prompt/03-数据分析与总结/02-数据解读与可视化.md",
+    "Prompt/README.md",
+    "Prompt/06-客服与问答/01-客服机器人.md.tmp.29029.bb5ec7b1195f",
+    "Prompt/Prompt-MOC.md.tmp.29029.e6d57e93b6d5",
+    "AI基础/11.AI Agent 智能体  菜鸟教程.md",
+    "AI基础/14. 产品设计  菜鸟教程.md",
+    "AI基础/18.模型微调 Fine-tuning  菜鸟教程.md",
+    "AI基础/24.NLP 进阶技术  菜鸟教程.md",
+    "AI基础/25.前沿研究动态  菜鸟教程.md",
+    "ObsidianWebClipper代码块修复指南.md",
+    "ObsidianWebClipper代码块修复指南.md.tmp.26279.1d3c3ffbc297",
+    "ObsidianWebClipper代码块修复指南.md.tmp.26279.103177172a05",
+    "AI基础/27.AI 评测与安全研究  菜鸟教程.md",
+    "AI基础/26.AI 系统架构  菜鸟教程.md",
+    "ObsidianWebClipper代码块修复指南.md.tmp.26279.d1f91ba4fe33",
+    "ObsidianWebClipper代码块修复指南.md.tmp.26279.7dff39d6888d",
+    "Clippings/24.NLP 进阶技术  菜鸟教程.md.tmp.26279.ef5ecf343a9c",
+    "Clippings/24.NLP 进阶技术  菜鸟教程.md.tmp.26279.15398a74d6e1",
+    "ObsidianWebClipper代码块修复指南.md.tmp.26279.8f71284c54fa",
+    "AI基础/23.计算机视觉 AI  菜鸟教程.md",
+    "AI基础/22.深度学习基础  菜鸟教程.md",
+    "AI基础/08.Prompt 工程进阶  菜鸟教程.md",
+    "AI基础/21.AI 工程化部署  菜鸟教程.md",
+    "AI基础/20.向量数据库  菜鸟教程.md",
+    "AI基础/19.RLHF 对齐训练  菜鸟教程.md",
+    "Clippings/RLHF 对齐训练  菜鸟教程.md",
+    "AI基础/17.Transformer 深度解析  菜鸟教程.md",
+    "AI基础/16.AI 安全进阶  菜鸟教程.md",
+    "AI基础/15.本地模型部署  菜鸟教程.md",
+    "AI基础/13.AI 工作流自动化  菜鸟教程.md",
     "未命名.canvas",
     "Git/Pasted image 20260618165648.png"
   ]

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782522050890-1lsnb46c6",
+  "providerId": "claude",
+  "title": "执行ObsidianWebClipper代码块修复指南",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782522050891,
+  "updatedAt": 1782522149679,
+  "lastResponseAt": 1782522149679,
+  "sessionId": "0a64d7a0-a897-4046-b9be-94c64487fc39",
+  "providerState": {
+    "providerSessionId": "0a64d7a0-a897-4046-b9be-94c64487fc39"
+  },
+  "currentNote": "Clippings/20.向量数据库  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 571,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 30848,
+    "contextWindow": 200000,
+    "contextTokens": 31419,
+    "percentage": 16
+  }
+}

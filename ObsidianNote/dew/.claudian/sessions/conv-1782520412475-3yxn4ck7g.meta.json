@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782520412475-3yxn4ck7g",
+  "providerId": "claude",
+  "title": "按照ObsidianWebClipper代码块修复指南执行",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782520412476,
+  "updatedAt": 1782521527913,
+  "lastResponseAt": 1782521296113,
+  "sessionId": "03040181-d863-4bc7-9020-b789d74d4d5d",
+  "providerState": {
+    "providerSessionId": "03040181-d863-4bc7-9020-b789d74d4d5d"
+  },
+  "currentNote": "Clippings/17.Transformer 深度解析  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 948,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 68608,
+    "contextWindow": 200000,
+    "contextTokens": 69556,
+    "percentage": 35,
+    "contextWindowIsAuthoritative": true
+  }
+}

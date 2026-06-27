@@ -1,0 +1,123 @@
+{
+  "id": "conv-1782528494441-jte6rzkkb",
+  "providerId": "claude",
+  "title": "根据README更新Prompt 库",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782528494442,
+  "updatedAt": 1782528693449,
+  "lastResponseAt": 1782528693449,
+  "sessionId": "664867dd-3779-4e53-89d7-f7099408e6ad",
+  "providerState": {
+    "providerSessionId": "664867dd-3779-4e53-89d7-f7099408e6ad",
+    "subagentData": {
+      "call_49fc469d704f45ecb3d77a88": {
+        "id": "call_49fc469d704f45ecb3d77a88",
+        "description": "Find Prompt library and README",
+        "prompt": "I need to find two things in the vault at /home/dew/Dew-code/ObsidianNote/dew/:\n\n1. A \"Prompt 库\" or \"Prompt library\" note/folder - search for files with \"prompt\" in the name (case insensitive)\n2. A README file that might contain prompt-related content - search broadly for README files\n\nAlso search for any folders or files related to \"RAG\", \"检索增强\", or \"prompt\".\n\nBe thorough - check multiple naming conventions. Return the full paths of all matches found.",
+        "status": "completed",
+        "toolCalls": [
+          {
+            "id": "call_22363de8079c437ca5a95347",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"*prompt*\" -type f 2>/dev/null",
+              "description": "Find all files with \"prompt\" in the name (case insensitive)"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Clippings/08.Prompt 工程进阶  菜鸟教程.md\n/home/dew/Dew-code/ObsidianNote/dew/Clippings/02.Prompt 提示词  菜鸟教程.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/Prompt-MOC.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/04-PromptBuilder 代码示例.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/10-Prompt调试.md"
+          },
+          {
+            "id": "call_910aa0464f0c48a1b5fa8ef2",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"*prompt*\" -type d 2>/dev/null",
+              "description": "Find all directories with \"prompt\" in the name (case insensitive)"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Prompt"
+          },
+          {
+            "id": "call_f34d805ea4694c349fc1c980",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"README*\" -type f 2>/dev/null",
+              "description": "Find all README files (case insensitive)"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md"
+          },
+          {
+            "id": "call_78918d8d8aca4fac86eb66e4",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"*rag*\" -o -iname \"*检索增强*\" 2>/dev/null",
+              "description": "Find all files and dirs with \"RAG\" or \"检索增强\" in the name"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Clippings/10.RAG 检索增强生成  菜鸟教程.md"
+          },
+          {
+            "id": "call_c7157949758640c686f27038",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"*prompt库*\" -o -iname \"*prompt library*\" -o -iname \"*prompts*\" -o -iname \"*Prompt库*\" 2>/dev/null",
+              "description": "Find specific prompt library naming variants"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "(Bash completed with no output)"
+          },
+          {
+            "id": "call_1ba1090ccdc940129aaf312a",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/Prompt/ -type f -o -type d 2>/dev/null | sort",
+              "description": "List all files and directories inside the Prompt folder"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Prompt/\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/01-文章大纲生成.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/02-文章润色.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/03-风格转换.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/04-营销文案生成.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/05-邮件写作.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/06-博客写作流程.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/07-简历优化.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/01-写作与内容创作/08-内容改写.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/02-代码辅助开发\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/02-代码辅助开发/01-代码生成与解释.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/02-代码辅助开发/02-Bug调试.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/02-代码辅助开发/03-代码重构.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/02-代码辅助开发/04-问题排查.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/03-数据分析与总结\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/03-数据分析与总结/01-文档摘要.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/03-数据分析与总结/02-数据解读与可视化.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/03-数据分析与总结/03-会议纪要.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/04-学习与教育\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/04-学习与教育/01-学习助手.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/04-学习与教育/02-概念解释.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/04-学习与教育/03-语言学习.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/04-学习与教育/04-翻译.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/05-创意与设计\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/05-创意与设计/01-头脑风暴.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/05-创意与设计/02-设计描述.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/05-创意与设计/03-故事创作.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/06-客服与问答\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/06-客服与问答/01-客服机器人.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/01-提示词基础结构.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/02-角色扮演提示.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/03-精准输出技巧.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/04-PromptBuilder 代码示例.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/05-思维链提示.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/06-少样本提示.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/07-系统提示词设计.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/08-ReAct框架.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/09-结构化输出.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/10-Prompt调试.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/11-提示词安全.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/Prompt-MOC.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md"
+          },
+          {
+            "id": "call_7f6320a35f644f4c8bef5cf1",
+            "name": "Bash",
+            "input": {
+              "command": "find /home/dew/Dew-code/ObsidianNote/dew/ -iname \"*检索*\" 2>/dev/null",
+              "description": "Find files with \"检索\" in the name"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "/home/dew/Dew-code/ObsidianNote/dew/Clippings/10.RAG 检索增强生成  菜鸟教程.md"
+          },
+          {
+            "id": "call_a01c022c79fa4822a0a8b556",
+            "name": "Read",
+            "input": {
+              "file_path": "/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t---\n2\ttitle: \"Prompt 库使用说明\"\n3\tdescription: \"新 Prompt 文档入库的格式规范与操作指南\"\n4\ttags:\n5\t  - prompt\n6\t  - 指南\n7\tcreated: 2026-06-24\n8\t---\n9\t\n10\t# Prompt 库使用说明\n11\t\n12\t> 本文件是 Prompt 模板库的**格式规范**。当你需要将一份新的 Prompt 文档整理入库时，请严格按照本说明执行。\n13\t\n14\t---\n15\t\n16\t## 一、文件夹结构\n17\t\n18\t```\n19\tPrompt/\n20\t├── README.md                          ← 你正在看的这份说明\n21\t├── Prompt-MOC.md                      ← 总索引（Map of Content）\n22\t├── 01-写作与内容创作/\n23\t│   ├── 01-文章大纲生成.md\n24\t│   ├── 02-文章润色.md\n25\t│   └── ...\n26\t├── 02-代码辅助开发/\n27\t├── 03-数据分析与总结/\n28\t├── 04-学习与教育/\n29\t├── 05-创意与设计/\n30\t├── 06-客服与问答/\n31\t└── 07-提示词技巧与方法/\n32\t```\n33\t\n34\t### 现有分类（7 个）\n35\t\n36\t| 编号 | 文件夹名 | 包含内容 |\n37\t|------|----------|----------|\n38\t| 01 | 写作与内容创作 | 文章、文案、邮件、简历等文字工作 |\n39\t| 02 | 代码辅助开发 | 代码生成、调试、重构、排查 |\n40\t| 03 | 数据分析与总结 | 文档摘要、数据解读、会议纪要 |\n41\t| 04 | 学习与教育 | 学习助手、概念解释、语言学习、翻译 |\n42\t| 05 | 创意与设计 | 头脑风暴、设计描述、故事创作 |\n43\t| 06 | 客服与问答 | 客服机器人等问答场景 |\n44\t| 07 | 提示词技巧与方法 | Prompt 编写方法论与技巧 |\n45\t\n46\t### 分类规则\n47\t\n48\t1. **优先归入现有分类** —— 大多数 Prompt 都能归入上述 7 个类别\n49\t2. **确实无法归类时，新建分类** —— 编号从 `08-` 开始递增，文件夹名格式为 `XX-分类名称`（中文）\n50\t3. **分类粒度适中** —— 不要为单个 Prompt 新建分类；一个分类下至少应有 2-3 个相关 Prompt\n51\t\n52\t---\n53\t\n54\t## 二、文件命名规范\n55\t\n56\t- **格式**：`XX-中文名称.md`，`XX` 为两位数字编号\n57\t- **编号**：在所属文件夹内递增，从 `01-` 开始\n58\t- **名称**：简洁的中文名，3-6 个字为宜\n59\t- **示例**：`01-文章大纲生成.md`、`02-Bug调试.md`\n60\t\n61\t---\n62\t\n63\t## 三、Frontmatter 规范\n64\t\n65\t每个 Prompt 文件**必须**包含以下 YAML frontmatter：\n66\t\n67\t```yaml\n68\t---\n69\ttitle: \"Prompt 标题\"\n70\tcategory: \"所属分类名（不带编号）\"\n71\tdifficulty: \"入门\"          # 或 \"进阶\"\n72\ttags:\n73\t  - prompt                  # 固定第一个 tag\n74\t  - 标签1                   # 2-4 个中文主题标签\n75\t  - 标签2\n76\tcreated: 2026-06-24         # 创建日期\n77\tsource: \"[[来源文件路径]]\"    # 来源 wikilink\n78\t---\n79\t```\n80\t\n81\t### 字段说明\n82\t\n83\t| 字段 | 必填 | 类型 | 说明 |\n84\t|------|------|------|------|\n85\t| `title` | ✅ | string | 文件标题，与 H1 标题一致 |\n86\t| `category` | ✅ | string | 所属分类，如 `\"写作与内容创作\"`（不带 `01-` 前缀） |\n87\t| `difficulty` | ✅ | string | 只能是 `\"入门\"` 或 `\"进阶\"` |\n88\t| `tags` | ✅ | list | 第一个必须是 `prompt`，后面加 2-4 个主题标签 |\n89\t| `created` | ✅ | date | 创建日期，格式 `YYYY-MM-DD` |\n90\t| `source` | ✅ | string | 来源 wikilink，格式 `\"[[Clippings/文件名]]\"` |\n91\t\n92\t---\n93\t\n94\t## 四、正文结构模板\n95\t\n96\t每个 Prompt 文件的正文**必须**按以下顺序组织：\n97\t\n98\t```markdown\n99\t# 标题\n100\t\n101\t> 一句话简介，说明这个 Prompt 的用途或核心理念。\n102\t\n103\t---\n104\t\n105\t## Prompt 模板\n106\t\n107\t```\n108\t[这里是可复制的 Prompt 模板]\n109\t[用 [方括号] 标注需要用户填写的变量]\n110\t```\n111\t\n112\t---\n113\t\n114\t## 使用示例\n115\t\n116\t```\n117\t[一个已经填写好变量的真实示例]\n118\t[展示 Prompt 实际使用时的完整样子]\n119\t```\n120\t\n121\t---\n122\t\n123\t## 技巧\n124\t\n125\t- **技巧 1**：具体建议\n126\t- **技巧 2**：具体建议\n127\t- **技巧 3**：具体建议\n128\t\n129\t---\n130\t\n131\t## 相关模板\n132\t\n133\t- [[Prompt/XX-分类/YY-名称|显示名称]]\n134\t- [[Prompt/XX-分类/YY-名称|显示名称]]\n135\t```\n136\t\n137\t### 各部分要求\n138\t\n139\t| 部分 | 必填 | 说明 |\n140\t|------|------|------|\n141\t| H1 标题 | ✅ | 与 frontmatter `title` 一致 |\n142\t| 引用简介 | ✅ | `>` 引用块，一句话概括用途 |\n143\t| Prompt 模板 | ✅ | 用代码块包裹，`[方括号]` 标注变量 |\n144\t| 使用示例 | ✅ | 至少一个填写完整的真实示例 |\n145\t| 技巧/原则 | ✅ | 3-5 条实用建议，加粗关键词 |\n146\t| 相关模板 | ✅ | 2-3 个 wikilink 指向关联文件 |\n147\t| 补充内容 | ❌ | 可选：速查表、对比表、流程图、检查清单等 |\n148\t\n149\t---\n150\t\n151\t## 五、Prompt 模板编写规范\n152\t\n153\t### 变量标注\n154\t\n155\t- 使用 `[方括号]` 标注用户需要替换的内容\n156\t- 变量名要直观易懂，用中文\n157\t- 示例：`[主题]`、`[目标读者]`、`[你的代码]`、`[期望输出格式]`\n158\t\n159\t### 模板质量要求\n160\t\n161\t1. **可直接复制使用** —— 用户复制模板后，只需替换变量即可发送\n162\t2. **指令明确** —— 用编号列表、分点说明，避免模糊表述\n163\t3. **给出约束** —— 指定输出格式、长度、风格等，减少 AI 自由发挥\n164\t4. **一次解决一个问题** —— 不要把多个不相关的任务塞进一个 Prompt\n165\t\n166\t---\n167\t\n168\t## 六、入库操作流程\n169\t\n170\t当你拿到一份新的 Prompt 文档时，按以下步骤操作：\n171\t\n172\t### Step 1：判断分类\n173\t\n174\t```\n175\t新 Prompt 的核心用途是什么？\n176\t  → 匹配现有 7 个分类 → 进入该文件夹\n177\t  → 无法匹配 → 新建 XX-分类名 文件夹（编号递增）\n178\t```\n179\t\n180\t### Step 2：确定编号\n181\t\n182\t```\n183\t查看目标文件夹内已有文件\n184\t  → 新文件编号 = 最大编号 + 1\n185\t  → 示例：已有 01、02、03 → 新文件为 04\n186\t```\n187\t\n188\t### Step 3：创建文件\n189\t\n190\t按本说明的「正文结构模板」创建 `.md` 文件\n191\t\n192\t### Step 4：更新 MOC\n193\t\n194\t在 `Prompt-MOC.md` 中添加条目：\n195\t\n196\t```markdown\n197\t### [[Prompt/XX-分类/新文件名|分类名]]\n198\t分类简介。\n199\t\n200\t- [[Prompt/XX-分类/新文件名|Prompt 名称]]\n201\t```\n202\t\n203\t- 如果分类已存在，在该分类的列表末尾追加一行\n204\t- 如果是新分类，在「分类索引」区域追加新的 `###` 段落\n205\t\n206\t### Step 5：建立关联\n207\t\n208\t- 在新文件的「相关模板」部分添加 2-3 个关联链接\n209\t- 检查关联文件是否也需要反向添加链接（可选）\n210\t\n211\t---\n212\t\n213\t## 七、快速模板（复制即用）\n214\t\n215\t```markdown\n216\t---\n217\ttitle: \"标题\"\n218\tcategory: \"分类名\"\n219\tdifficulty: \"入门\"\n220\ttags:\n221\t  - prompt\n222\t  - 标签1\n223\t  - 标签2\n224\tcreated: YYYY-MM-DD\n225\tsource: \"[[Clippings/来源文件]]\"\n226\t---\n227\t\n228\t# 标题\n229\t\n230\t> 一句话简介。\n231\t\n232\t---\n233\t\n234\t## Prompt 模板\n235\t\n236\t```\n237\t[在这里写 Prompt 模板，用 [方括号] 标注变量]\n238\t```\n239\t\n240\t---\n241\t\n242\t## 使用示例\n243\t\n244\t```\n245\t[填写一个完整的真实示例]\n246\t```\n247\t\n248\t---\n249\t\n250\t## 技巧\n251\t\n252\t- **要点 1**：说明\n253\t- **要点 2**：说明\n254\t- **要点 3**：说明\n255\t\n256\t---\n257\t\n258\t## 相关模板\n259\t\n260\t- [[Prompt/XX-分类/YY-名称|显示名]]\n261\t```\n262\t\n263\t---\n264\t\n265\t## 八、常见问题\n266\t\n267\t**Q：一个 Prompt 涉及多个分类怎么办？**\n268\tA：按**主要用途**归类。在「相关模板」中链接到其他分类的相关文件即可。\n269\t\n270\t**Q：Prompt 来自网络，没有 Clippings 来源怎么办？**\n271\tA：`source` 字段填实际来源，如网页标题的 wikilink，或写 `\"来自网络\"`。尽量保留出处。\n272\t\n273\t**Q：Prompt 太长，需要多个模板怎么办？**\n274\tA：在同一个文件中用 `### 子标题` 区分多个模板变体，每个都用代码块包裹。参考 `02-代码辅助开发/01-代码生成与解释.md`。\n275\t\n276\t**Q：difficulty 选\"入门\"还是\"进阶\"？**\n277\tA：**入门** —— 任何人复制粘贴就能用；**进阶** —— 需要一定领域知识或需要多次调试优化。\n278\t"
+          }
+        ],
+        "isExpanded": false,
+        "result": "Here are the complete results of the search.\n\n---\n\n**1. Prompt Library (Prompt 库)**\n\nThe main Prompt library folder is:\n\n- `/home/dew/Dew-code/ObsidianNote/dew/Prompt/` -- This is the primary \"Prompt 库\" directory. It contains 7 subdirectories of prompt templates, plus a README and an index file.\n\nThe README at `/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md` is explicitly titled \"Prompt 库使用说明\" and serves as the format specification / usage guide for the Prompt library.\n\nFiles with \"prompt\" in their name (case insensitive):\n\n- `/home/dew/Dew-code/ObsidianNote/dew/Prompt/Prompt-MOC.md` -- Map of Content / index file\n- `/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/04-PromptBuilder 代码示例.md`\n- `/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/10-Prompt调试.md`\n- `/home/dew/Dew-code/ObsidianNote/dew/Clippings/08.Prompt 工程进阶  菜鸟教程.md`\n- `/home/dew/Dew-code/ObsidianNote/dew/Clippings/02.Prompt 提示词  菜鸟教程.md`\n\nThe `Prompt/` folder contains these subdirectories (7 categories):\n\n- `01-写作与内容创作/` (8 files)\n- `02-代码辅助开发/` (4 files)\n- `03-数据分析与总结/` (3 files)\n- `04-学习与教育/` (4 files)\n- `05-创意与设计/` (3 files)\n- `06-客服与问答/` (1 file)\n- `07-提示词技巧与方法/` (11 files)\n\n---\n\n**2. README files**\n\nOnly one README was found:\n\n- `/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md` -- This is the \"Prompt 库使用说明\" (Prompt Library Usage Guide), containing format specifications for adding new prompt documents to the library. It is directly prompt-related.\n\n---\n\n**3. RAG / 检索增强 related files**\n\n- `/home/dew/Dew-code/ObsidianNote/dew/Clippings/10.RAG 检索增强生成  菜鸟教程.md` -- A clipping about RAG (Retrieval-Augmented Generation) from a tutorial site.\n\n---\n\n**Summary of all unique file paths found:**\n\n```\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/                              (Prompt library folder)\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/README.md                     (Prompt library usage guide)\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/Prompt-MOC.md                 (Prompt library index/MOC)\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/04-PromptBuilder 代码示例.md\n/home/dew/Dew-code/ObsidianNote/dew/Prompt/07-提示词技巧与方法/10-Prompt调试.md\n/home/dew/Dew-code/ObsidianNote/dew/Clippings/08.Prompt 工程进阶  菜鸟教程.md\n/home/dew/Dew-code/ObsidianNote/dew/Clippings/02.Prompt 提示词  菜鸟教程.md\n/home/dew/Dew-code/ObsidianNote/dew/Clippings/10.RAG 检索增强生成  菜鸟教程.md\n```\n\nNo additional naming variants were found for \"Prompt库\" or \"Prompt library\" as standalone files -- the library is represented by the `Prompt/` folder itself and its `README.md`. No files matched \"检索\" beyond the single RAG clipping already listed above."
+      }
+    }
+  },
+  "currentNote": "Clippings/10.RAG 检索增强生成  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 254,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 32960,
+    "contextWindow": 200000,
+    "contextTokens": 33214,
+    "percentage": 17,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782463451793-0spadypkm",
+  "providerId": "claude",
+  "title": "根据ObsidianWebClipper代码块修复指南执行",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782463451794,
+  "updatedAt": 1782519639827,
+  "lastResponseAt": 1782518563852,
+  "sessionId": "67265be2-0b5b-4851-9610-504c9d46bdb9",
+  "providerState": {
+    "providerSessionId": "67265be2-0b5b-4851-9610-504c9d46bdb9"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1344,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 65408,
+    "contextWindow": 200000,
+    "contextTokens": 66752,
+    "percentage": 33,
+    "contextWindowIsAuthoritative": true
+  }
+}

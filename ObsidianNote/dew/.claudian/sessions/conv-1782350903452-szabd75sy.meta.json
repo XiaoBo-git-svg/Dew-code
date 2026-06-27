@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782350903452-szabd75sy",
+  "providerId": "claude",
+  "title": "修改ObsidianWebClipper代码块修复指南,要求:不提供脚本,仅仅告知问题现象,怎么修复...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782350903453,
+  "updatedAt": 1782461412555,
+  "lastResponseAt": 1782351046567,
+  "sessionId": "58b2ea15-412c-40aa-a2ee-9383e0614b6d",
+  "providerState": {
+    "providerSessionId": "58b2ea15-412c-40aa-a2ee-9383e0614b6d"
+  },
+  "currentNote": "ObsidianWebClipper代码块修复指南.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1498,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 24192,
+    "contextWindow": 200000,
+    "contextTokens": 25690,
+    "percentage": 13,
+    "contextWindowIsAuthoritative": true
+  }
+}

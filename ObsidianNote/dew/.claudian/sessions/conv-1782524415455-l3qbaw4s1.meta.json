@@ -1,0 +1,24 @@
+{
+  "id": "conv-1782524415455-l3qbaw4s1",
+  "providerId": "claude",
+  "title": "根据根据ObsidianWebClipper代码块修复指南执行",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1782524415456,
+  "updatedAt": 1782524862236,
+  "lastResponseAt": 1782524822746,
+  "sessionId": "d7d1c8ef-98d9-4652-adfb-c53cd090f6f7",
+  "providerState": {
+    "providerSessionId": "d7d1c8ef-98d9-4652-adfb-c53cd090f6f7"
+  },
+  "currentNote": "Clippings/21.AI 工程化部署  菜鸟教程.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 557,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 62080,
+    "contextWindow": 200000,
+    "contextTokens": 62637,
+    "percentage": 31,
+    "contextWindowIsAuthoritative": true
+  }
+}
